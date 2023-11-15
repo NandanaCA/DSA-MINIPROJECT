@@ -303,10 +303,10 @@ int main()
 {
     int choice,n,start;
     FILE* fp;
-    //fp = fopen("test1.txt\0", "r+");
-    //fp = fopen("test2.txt\0", "r+");
-    fp = fopen("test3.txt\0", "r+");
-    //fp = fopen("test4.txt\0", "r+");
+    char filename[10];
+    printf("enter file name:\n");
+    scanf("%s",&filename);
+    fp = fopen(filename, "r+");
 
     fscanf(fp,"%d",&n);
     printf("%d\n", n);
